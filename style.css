@@ -72,6 +72,13 @@ font-size: 24px;
 .MJXc-display, .form-inline /*, input, form, .class-inline*/ {
 display: inline-block !important;
 }
+#submitButton {
+margin-top: 20px;
+margin-bottom: 35px;
+padding: 0.85em;
+font-size: 16px;
+font-style: italic;
+}
 
 /*OUTPUT AREA CODE*/
 #outputWrap {
@@ -79,8 +86,18 @@ display: -webkit-flex;
 display: flex;
 justify-content: center;
 }
+#outputArea {
+border-radius: 5%;
+border: 1px solid black;
+background-color: #eaeaea;
+}
+#outputArea h3 {
+margin: 24px;
+margin-left: 10px;
+}
 .resultContain {
 display: none;
+padding: 10px 25px;
 }
 
 /* BREAKS AT 768px */
