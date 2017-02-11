@@ -1,11 +1,9 @@
-var vector = {x: 0, y: 0, z: 0};
-
-function VectorConstruct(x, y, z){
+function Vector(x, y, z){
 	this.x = toNum(x);
 	this.y = toNum(y);
 	this.z = toNum(z);
 
-	//console.log("Your new vector is (" + x + ", " + y + ", " + z + ").");
+	console.log("Your new vector is (" + x + ", " + y + ", " + z + ").");
 }
 
 function toNum(s){
@@ -25,6 +23,31 @@ function toNum(s){
 
 
 function addVector(v1, v2){
-	var answer = VectorConstruct(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
+	var answer = v1;
+	for(var n in v1){
+		answer[n] = v1[n] + v2[n];
+	}
+	return answer;
+}
+
+function scaleVector(v1, lambda){
+	var answer = v1;
+	for (var n in v1){
+		answer[n] *= lambda;
+	}
+	return answer;
+}
+
+function subtractVector(v1, v2){
+	var negativev2 = scaleVector(v2, -1);
+	var answer = addVector(v1, negativev2);
+	return answer;
+}
+
+function dotProduct(v1, v2){
+	var answer = 0;
+	for(var n in v1){
+		answer += v1[n]*v2[n];
+	}
 	return answer;
 }
