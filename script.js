@@ -26,16 +26,16 @@ $(document).ready(function(){
       $("#vDotW").hide();
       $("#crossProdResult").hide();
     });
-    // dot product doesn't work!
-    // $("#dotProd").click(function(){
-    //   $("#oneScalar").hide();
-    //   $("#twoVectors").show();
-    //   $("#vAddW")hide();
-    //   $("#vSubW").hide();
-    //   $("#scalMultResult").hide();
-    //   $("#vDotW").show();
-    //   $("#crossProdResult").hide();
-    // });
+    
+    $("#dotProd").click(function(){
+      $("#oneScalar").hide();
+      $("#twoVectors").show();
+      $("#vAddW").hide();
+      $("#vSubW").hide();
+      $("#scalMultResult").hide();
+      $("#vDotW").show();
+      $("#crossProdResult").hide();
+    });
     $("#crossProd").click(function(){
       $("#oneScalar").hide();
       $("#twoVectors").show();
