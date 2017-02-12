@@ -20,6 +20,10 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 border-bottom: 2px solid #c36d98;
 border-radius: 0;
 }
+#header a {
+text-decoration: none;
+color: white;
+}
 #title {
 font-style: italic;
 margin-left: 25px;
