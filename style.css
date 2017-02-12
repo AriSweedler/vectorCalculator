@@ -83,7 +83,6 @@ display: inline-block !important;
 }
 #submitButton {
 margin-top: 20px;
-margin-bottom: 35px;
 padding: 0.85em;
 font-size: 16px;
 font-style: italic;
@@ -95,11 +94,12 @@ display: none;
 display: -webkit-flex;
 display: flex;
 justify-content: center;
+padding-top: 35px;
 }
 #outputArea {
 border-radius: 5%;
-border: 1px solid black;
-background-color: #eaeaea;
+background-color: #5bbc8c;
+color: white;
 }
 #outputArea h3 {
 margin: 24px;
@@ -108,6 +108,10 @@ margin-left: 10px;
 .resultContain {
 display: none;
 padding: 10px 25px;
+}
+.textOutput {
+font-size: 20px;
+color: white;
 }
 
 /* BREAKS AT 768px */
