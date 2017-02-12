@@ -8,6 +8,7 @@ $(document).ready(function(){
       $("#crossProd").removeClass("bttnIsActive");
       $("#oneScalar").hide();
       $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
+      $("#submitButton").show();
       $("#vAddW").show();
       $("#vSubW").hide();
       $("#scalMultResult").hide();
@@ -24,6 +25,7 @@ $(document).ready(function(){
       $("#crossProd").removeClass("bttnIsActive");
       $("#oneScalar").hide();
       $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
+      $("#submitButton").show();
       $("#vAddW").hide();
       $("#vSubW").show();
       $("#scalMultResult").hide();
@@ -39,6 +41,7 @@ $(document).ready(function(){
       $("#crossProd").removeClass("bttnIsActive");
       $("#twoVectors").hide();
       $("#oneScalar").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
+      $("#submitButton").show();
       $("#vAddW").hide();
       $("#vSubW").hide();
       $("#scalMultResult").show();
@@ -54,6 +57,7 @@ $(document).ready(function(){
       $("#crossProd").removeClass("bttnIsActive");
       $("#oneScalar").hide();
       $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
+      $("#submitButton").show();
       $("#vAddW").hide();
       $("#vSubW").hide();
       $("#scalMultResult").hide();
@@ -69,6 +73,7 @@ $(document).ready(function(){
       $("#subButton").removeClass("bttnIsActive");
       $("#oneScalar").hide();
       $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
+      $("#submitButton").show();
       $("#vAddW").hide();
       $("#vSubW").hide();
       $("#scalMultResult").hide();
