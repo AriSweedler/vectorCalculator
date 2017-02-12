@@ -3,8 +3,18 @@ function Vector(x, y, z){
 	this.y = toNum(y);
 	this.z = toNum(z);
 
-	//console.log("Your new vector is (" + x + ", " + y + ", " + z + ").");
+	console.log("Your new vector is (" + x + ", " + y + ", " + z + ").");
 }
+
+$("#submitButton").click(function() {
+	console.log('clicked')
+	var x = $('#numV1').val()
+	var y = $('#numV2').val()
+	var z = $('#numV3').val()
+	var vectorV = new Vector(x, y, z)
+
+	console.log("submitted");
+});
 
 function toNum(s){
 	var answer = 0;
@@ -94,3 +104,5 @@ function crossProduct(v1, v2){
 
 	return answer;
 }
+
+
