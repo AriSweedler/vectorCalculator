@@ -1,6 +1,8 @@
+var buttonNum = 0;
 $(document).ready(function(){
     $("#addButton").click(function(){
       //$("#addButton").removeClass("bttnIsActive");
+      buttonNum = 1;
       $(this).toggleClass("bttnIsActive");
       $("#subButton").removeClass("bttnIsActive");
       $("#scalarMult").removeClass("bttnIsActive");
@@ -15,9 +17,9 @@ $(document).ready(function(){
       $("#vDotW").hide();
       $("#crossProdResult").hide();
     });
-    console.log("the function was left");
     $("#subButton").click(function(){
       //$("#subButton").removeClass("bttnIsActive");
+      buttonNum = 2;
       $(this).toggleClass("bttnIsActive");
       $("#addButton").removeClass("bttnIsActive");
       $("#scalarMult").removeClass("bttnIsActive");
@@ -34,6 +36,7 @@ $(document).ready(function(){
     });
     $("#scalarMult").click(function(){
       //$("#scalarMult").removeClass("bttnIsActive");
+      buttonNum = 3;
       $(this).toggleClass("bttnIsActive"); 
       $("#addButton").removeClass("bttnIsActive");
       $("#subButton").removeClass("bttnIsActive");
@@ -50,6 +53,7 @@ $(document).ready(function(){
     });
     $("#dotProd").click(function(){
       //$("#dotProd").removeClass("bttnIsActive");
+      buttonNum = 4;
       $(this).toggleClass("bttnIsActive"); 
       $("#addButton").removeClass("bttnIsActive");
       $("#scalarMult").removeClass("bttnIsActive");
@@ -66,6 +70,7 @@ $(document).ready(function(){
     });
     $("#crossProd").click(function(){
       //$("#crossProd").removeClass("bttnIsActive");
+      buttonNum = 5;
       $(this).toggleClass("bttnIsActive"); 
       $("#addButton").removeClass("bttnIsActive");
       $("#scalarMult").removeClass("bttnIsActive");
