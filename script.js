@@ -106,19 +106,34 @@ $("#submitButton").click(function() {
 	//var i = 1; //figure out buttone number i
 	switch(buttonNum){
 		case 1:
-			dealWithAdd();
+			var output = dealWithAdd();
+			// console.log(output);
+// 			console.log(output.x);
+			document.getElementById("addResult1").innerHTML = output.x;
+			document.getElementById("addResult2").innerHTML = output.y;
+			document.getElementById("addResult3").innerHTML = output.z;
 			break;
 		case 2:
-			dealWithSubtract();
+			var output = dealWithSubtract();
+			document.getElementById("subResult1").innerHTML = output.x;
+			document.getElementById("subResult2").innerHTML = output.y;
+			document.getElementById("subResult3").innerHTML = output.z;
 			break;
 		case 3:
-			dealWithScalarMult();
+			var output = dealWithScalarMult();
+			document.getElementById("scalMultResult1").innerHTML = output.x;
+			document.getElementById("scalMultResult2").innerHTML = output.y;
+			document.getElementById("scalMultResult3").innerHTML = output.z;
 			break;
 		case 4:
-			dealWithDot();
+			var output = dealWithDot();
+			document.getElementById("dotResult1").innerHTML = output;
 			break;
 		case 5:
-			dealWithCross();
+			var output = dealWithCross();
+			document.getElementById("crossResult1").innerHTML = output.x;
+			document.getElementById("crossResult2").innerHTML = output.y;
+			document.getElementById("crossResult3").innerHTML = output.z;
 			break;
 		default:
 			console.log("No method chosen");
@@ -139,7 +154,7 @@ function dealWithAdd(){
 	var vectorW = new Vector(wx, wy, wz);
 
 	var answer = addVector(vectorV, vectorW);
-	console.log(answer);
+	return answer;
 }
 
 function dealWithSubtract(){
@@ -157,7 +172,7 @@ function dealWithSubtract(){
 
 	var answer = subtractVector(vectorV, vectorW);
 
-	console.log(answer);
+	return (answer);
 }
 
 function dealWithDot(){
@@ -174,7 +189,7 @@ function dealWithDot(){
 	var vectorW = new Vector(wx, wy, wz);
 
 	var answer = dotProduct(vectorV, vectorW);
-	console.log(answer);
+	return answer;
 }
 
 function dealWithCross(){
@@ -192,7 +207,7 @@ function dealWithCross(){
 
 	var answer = crossProduct(vectorV, vectorW);
 
-	console.log(answer);
+	return answer;
 }
 
 function dealWithScalarMult(){
@@ -207,7 +222,7 @@ function dealWithScalarMult(){
 
 	var answer = scaleVector(vectorV, lambda);
 	
-	console.log(answer);
+	return answer;
 }
 
 
