@@ -229,11 +229,17 @@ function dealWithScalarMult(){
 
 function toNum(s){
 	var answer = 0;
+	var negative = false;
 
 	if(typeof(s) == "number") {
 		answer = s;
 	}
 	else if (typeof(s) == "string") {
+
+		if (s.charAt(0) === '-'){
+			negative = true;
+			s = s.substring(1);
+		}
 
 		if (s == ""){
 			return null;
@@ -244,6 +250,11 @@ function toNum(s){
 			answer += s.charAt(i) - '0';
 		}
 	}
+
+	if(negative){
+		answer *= -1;
+	}
+
 	return answer;
 }
 
