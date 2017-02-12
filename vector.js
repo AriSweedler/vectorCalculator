@@ -7,14 +7,50 @@ function Vector(x, y, z){
 }
 
 $("#submitButton").click(function() {
-	console.log('clicked')
-	var x = $('#numV1').val()
-	var y = $('#numV2').val()
-	var z = $('#numV3').val()
-	var vectorV = new Vector(x, y, z)
 
-	console.log("submitted");
+	console.log("Clicked!")
+
+	var i = 1; //figure out buttone number i
+	switch(i){
+		case 1:
+			dealWithAdd();
+			break;
+		case 2:
+			dealWithSubtract();
+			break;
+		case 3:
+			dealWithScalarMult();
+			break;
+		case 4:
+			dealWithDot();
+			break;
+		case 5:
+			dealWithCross();
+			break;
+		default:
+			console.log("No method chosen");
+	}
 });
+
+function dealWithAdd(){
+
+	console.log("adding");
+
+	var vx = $('#numV1').val();
+	var vy = $('#numV2').val();
+	var vz = $('#numV3').val();
+	var vectorV = new Vector(vx, vy, vz);
+
+	var wx = $('#numW1').val();
+	var wy = $('#numW2').val();
+	var wz = $('#numW3').val();
+	var vectorW = new Vector(wx, wy, wz);
+
+	var answer = addVector(vectorV, vectorW);
+	console.log(answer);
+}
+
+
 
 function toNum(s){
 	var answer = 0;
@@ -39,6 +75,7 @@ function toNum(s){
 
 function addVector(v1, v2){
 	if (vectorLength(v1) != vectorLength(v2)){
+		console.log("invalid vector lengths");
 		return;
 	}
 
@@ -65,6 +102,7 @@ function subtractVector(v1, v2){
 
 function dotProduct(v1, v2){
 	if (vectorLength(v1) != vectorLength(v2)){
+		console.log("invalid vector lengths");
 		return;
 	}
 
