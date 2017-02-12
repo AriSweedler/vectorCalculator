@@ -45,6 +45,7 @@ $(document).ready(function(){
       $("#vDotW").hide();
       $("#crossProdResult").hide();
     });
+<<<<<<< HEAD
     
     $("#dotProd").click(function(){
       //$("#dotProd").removeClass("bttnIsActive");
@@ -61,6 +62,17 @@ $(document).ready(function(){
       $("#vDotW").show();
       $("#crossProdResult").hide();
     });
+=======
+    // $("#dotProd").click(function(){
+    //   $("#oneScalar").hide();
+    //   $("#twoVectors").show();
+    //   $("#vAddW")hide();
+    //   $("#vSubW").hide();
+    //   $("#scalMultResult").hide();
+    //   $("#vDotW").show();
+    //   $("#crossProdResult").hide();
+    // });
+>>>>>>> origin/dustins_branch
     $("#crossProd").click(function(){
       //$("#crossProd").removeClass("bttnIsActive");
       $(this).toggleClass("bttnIsActive"); 
