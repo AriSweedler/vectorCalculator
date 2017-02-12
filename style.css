@@ -24,6 +24,8 @@ display: -webkit-flex;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: -webkit-column;
+flex-direction: column;
 margin: 3em 0;
 }
 .btn-group {
@@ -64,7 +66,7 @@ align-items: center;
 flex-direction: -webkit-column;
 flex-direction: column;
 }
-#twoVectors, #oneScalar {
+#optionContain {
 /*display: -webkit-flex;
 display: flex;
 justify-content: center;
