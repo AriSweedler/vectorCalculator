@@ -14,6 +14,7 @@ border-radius: 0;
 }
 #title {
 font-style: italic;
+margin-left: 25px;
 }
 
 /*BUTTON CODE*/
@@ -31,7 +32,7 @@ margin-right: auto;
 display: -webkit-flex;
 display: flex;
 }
-.btn-group .btn {
+.btn-group .btn, .btn-group .btn:active, .btn-group.active, .btn-group .btn:focus, .btn-group .btn:active:hover {
 background-color: #5bbc8c;
 border-radius: 5%;
 color: #fff;
@@ -43,10 +44,15 @@ background-color: #c36d98;
 color: #fff;
 border-color: transparent;
 }
-.btn-group .btn:active, .btn-group .btn:focus, .btn-group .btn:active:hover {
+.btn-default.active,  .active, .bttnIsActive {
 background-color: #b34a7f;
 color: #fff;
 border-color: transparent;
+}
+.bttnIsActive {
+background-color: #b34a7f !important;
+color: #fff !important;
+border-color: transparent !important;
 }
 
 /*DISPLAY AREA CODE*/
@@ -71,6 +77,33 @@ font-size: 24px;
 }
 .MJXc-display, .form-inline /*, input, form, .class-inline*/ {
 display: inline-block !important;
+}
+#submitButton {
+margin-top: 20px;
+margin-bottom: 35px;
+padding: 0.85em;
+font-size: 16px;
+font-style: italic;
+}
+
+/*OUTPUT AREA CODE*/
+#outputWrap {
+display: -webkit-flex;
+display: flex;
+justify-content: center;
+}
+#outputArea {
+border-radius: 5%;
+border: 1px solid black;
+background-color: #eaeaea;
+}
+#outputArea h3 {
+margin: 24px;
+margin-left: 10px;
+}
+.resultContain {
+display: none;
+padding: 10px 25px;
 }
 
 /* BREAKS AT 768px */
