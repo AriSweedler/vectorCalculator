@@ -177,7 +177,7 @@ function dealWithDot(){
 	console.log(answer);
 }
 
-function dealWithDot(){
+function dealWithCross(){
 	console.log("finding cross product");
 
 	var vx = $('#numV1').val();
