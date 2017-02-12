@@ -7,7 +7,7 @@ $(document).ready(function(){
       $("#dotProd").removeClass("bttnIsActive");
       $("#crossProd").removeClass("bttnIsActive");
       $("#oneScalar").hide();
-      $("#twoVectors").show();
+      $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
       $("#vAddW").show();
       $("#vSubW").hide();
       $("#scalMultResult").hide();
@@ -23,7 +23,7 @@ $(document).ready(function(){
       $("#dotProd").removeClass("bttnIsActive");
       $("#crossProd").removeClass("bttnIsActive");
       $("#oneScalar").hide();
-      $("#twoVectors").show();
+      $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
       $("#vAddW").hide();
       $("#vSubW").show();
       $("#scalMultResult").hide();
@@ -38,7 +38,7 @@ $(document).ready(function(){
       $("#dotProd").removeClass("bttnIsActive");
       $("#crossProd").removeClass("bttnIsActive");
       $("#twoVectors").hide();
-      $("#oneScalar").show();
+      $("#oneScalar").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
       $("#vAddW").hide();
       $("#vSubW").hide();
       $("#scalMultResult").show();
@@ -53,7 +53,7 @@ $(document).ready(function(){
       $("#subButton").removeClass("bttnIsActive");
       $("#crossProd").removeClass("bttnIsActive");
       $("#oneScalar").hide();
-      $("#twoVectors").show();
+      $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
       $("#vAddW").hide();
       $("#vSubW").hide();
       $("#scalMultResult").hide();
@@ -68,7 +68,7 @@ $(document).ready(function(){
       $("#dotProd").removeClass("bttnIsActive");
       $("#subButton").removeClass("bttnIsActive");
       $("#oneScalar").hide();
-      $("#twoVectors").show();
+      $("#twoVectors").css({"display": "-webkit-flex", "display": "flex", "justify-content": "center", "align-items": "center", "flex-direction": "-webkit-column", "flex-direction": "column"});
       $("#vAddW").hide();
       $("#vSubW").hide();
       $("#scalMultResult").hide();

@@ -65,12 +65,13 @@ flex-direction: -webkit-column;
 flex-direction: column;
 }
 #twoVectors, #oneScalar {
-display: -webkit-flex;
+/*display: -webkit-flex;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: -webkit-column;
-flex-direction: column;
+flex-direction: column;*/
+display: none;
 }
 span.mjx-stack, span.mjx-char {
 font-size: 24px;
