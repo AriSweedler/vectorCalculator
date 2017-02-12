@@ -33,7 +33,6 @@ $("#submitButton").click(function() {
 });
 
 function dealWithAdd(){
-
 	console.log("adding");
 
 	var vx = $('#numV1').val();
@@ -47,6 +46,74 @@ function dealWithAdd(){
 	var vectorW = new Vector(wx, wy, wz);
 
 	var answer = addVector(vectorV, vectorW);
+	console.log(answer);
+}
+
+function dealWithSubtract(){
+	console.log("subtracting");
+
+	var vx = $('#numV1').val();
+	var vy = $('#numV2').val();
+	var vz = $('#numV3').val();
+	var vectorV = new Vector(vx, vy, vz);
+
+	var wx = $('#numW1').val();
+	var wy = $('#numW2').val();
+	var wz = $('#numW3').val();
+	var vectorW = new Vector(wx, wy, wz);
+
+	var answer = subtractVector(vectorV, vectorW);
+
+	console.log(answer);
+}
+
+function dealWithDot(){
+	console.log("finding dot product");
+
+	var vx = $('#numV1').val();
+	var vy = $('#numV2').val();
+	var vz = $('#numV3').val();
+	var vectorV = new Vector(vx, vy, vz);
+
+	var wx = $('#numW1').val();
+	var wy = $('#numW2').val();
+	var wz = $('#numW3').val();
+	var vectorW = new Vector(wx, wy, wz);
+
+	var answer = dotProduct(vectorV, vectorW);
+	console.log(answer);
+}
+
+function dealWithDot(){
+	console.log("finding cross product");
+
+	var vx = $('#numV1').val();
+	var vy = $('#numV2').val();
+	var vz = $('#numV3').val();
+	var vectorV = new Vector(vx, vy, vz);
+
+	var wx = $('#numW1').val();
+	var wy = $('#numW2').val();
+	var wz = $('#numW3').val();
+	var vectorW = new Vector(wx, wy, wz);
+
+	var answer = crossProduct(vectorV, vectorW);
+
+	console.log(answer);
+}
+
+function dealWithScalarMult(){
+	console.log("scalar multiplication");
+
+	var vx = $('#numV1').val();
+	var vy = $('#numV2').val();
+	var vz = $('#numV3').val();
+	var vectorV = new Vector(vx, vy, vz);
+
+	var lambda = $('#scalMult').val();
+
+	var answer = scaleVector(vectorV, lambda);
+	
 	console.log(answer);
 }
 
